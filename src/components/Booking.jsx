@@ -14,7 +14,7 @@ export default function Booking({ service }) {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    if (service) setForm((f) => ({ ...f, service }));
+    if (service) setForm((f) => ({ ...f, service: service.name }));
   }, [service]);
 
   const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });

@@ -8,13 +8,13 @@ import Location from './components/Location';
 import Footer from './components/Footer';
 
 export default function App() {
-  const [service, setService] = useState('');
+  const [service, setService] = useState(null);
   return (
     <>
       <Navbar />
       <main>
         <Hero />
-        <Services onSelect={setService} />
+        <Services onSelect={(name) => setService({ name })} />
         <Gallery />
         <Booking service={service} />
         <Location />
