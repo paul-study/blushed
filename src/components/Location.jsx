@@ -1,4 +1,4 @@
-import { Mail, MapPin, Clock, AtSign, Link2 } from 'lucide-react';
+import { Mail, MapPin, Clock, AtSign } from 'lucide-react';
 import { SITE } from '../data/site';
 import useReveal from '../hooks/useReveal';
 
@@ -27,7 +27,6 @@ export default function Location() {
             </div>
             <p><Mail size={20} strokeWidth={1.25} /> <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
             <p><AtSign size={20} strokeWidth={1.25} /> <a href={SITE.instagram} target="_blank" rel="noreferrer">Instagram</a></p>
-            <p><Link2 size={20} strokeWidth={1.25} /> <a href={SITE.facebook} target="_blank" rel="noreferrer">Facebook</a></p>
           </div>
         </div>
       </div>

@@ -8,7 +8,9 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container nav-inner">
-        <a href="#home" className="wordmark" onClick={close}>{SITE.name}</a>
+        <a href="#home" className="wordmark" onClick={close}>
+          <img src={SITE.secondaryLogo} alt={`${SITE.name} home`} />
+        </a>
         <nav className={`nav-links ${open ? 'open' : ''}`} aria-label="Main">
           {NAV_LINKS.map((l) => (
             <a key={l.href} href={l.href} onClick={close}>{l.label}</a>

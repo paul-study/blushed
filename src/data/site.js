@@ -8,9 +8,9 @@ export const SITE = {
     ['Saturday', '10:00am – 3:00pm'],
     ['Sunday', 'Closed'],
   ],
-  instagram: 'https://instagram.com/',
-  facebook: 'https://facebook.com/',
-  logo: '/logo.png',
+  instagram: 'https://www.instagram.com/blushedbybelle00?bqrl=MWVjMnhqY3NvZHVyYg==',
+  logo: '/logo1.png',
+  secondaryLogo: '/logo2.webp',
 };
 
 export const NAV_LINKS = [
